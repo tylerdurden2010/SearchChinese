@@ -7,7 +7,7 @@ lineb = fileb.readlines()
 for index in range(len(linea)):
 	linea[index] = linea[index].rstrip()
 	lineb[index] = lineb[index].rstrip()
-	command = "sed -i \"s/"+linea[index]+"/"+lineb[index] + "/g\" `grep -rl xlog ./*`"
+	command = "sed -i \"s/"+linea[index]+"/"+lineb[index] + "/g\" `grep -rl "+linea[index]+" ./*`"
 	#os.system('ls')c
 	os.system(command)
 	#print command
