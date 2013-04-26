@@ -17,7 +17,7 @@ def JudgeBlank(test):
 fw = open("c:\data2.txt","ab")
 pchinese=re.compile('([^a-zA-Z\\\/`!@#$%^&*()_+-=~\"\;\'?\>\[\]\{\}<>,. ]|\d+)+?')
 for index in range(1,1074):
-    f = open("C:\\Users\\Linquid\\Desktop\\1068\\" +str(index)+".txt")
+    f = open("C:\\Users\\username\\Desktop\\1068\\" +str(index)+".txt")
     test = ['\n']
     for line in f.readlines():
         m = pchinese.findall(str(line))

@@ -13,7 +13,7 @@ def getline(thefilepath, desired_line_number):
 	return ''
 
 for filepoint in range(1,1074):
-	allineed = open("C:\\Users\\Linquid\\Desktop\\1068\\"+str(filepoint)+".txt",'w')	
+	allineed = open("C:\\Users\\username\\Desktop\\1068\\"+str(filepoint)+".txt",'w')	
 	for i in range (308,334):
-		filepath = "C:\\Users\\Linquid\\Desktop\\1068\\" + str(filepoint)
+		filepath = "C:\\Users\\username\\Desktop\\1068\\" + str(filepoint)
 		allineed.write(Convert(getline(filepath,i)))
